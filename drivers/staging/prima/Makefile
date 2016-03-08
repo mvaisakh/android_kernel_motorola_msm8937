@@ -14,4 +14,5 @@ clean::
 	rm -f *.o *.ko *.mod.c *.mod.o *~ .*.cmd Module.symvers
 	rm -rf .tmp_versions
 
-
+# Moto read MACs from boot params instead of NV file
+CDEFINES += -DMOTO_UTAGS_MAC
